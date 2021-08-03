@@ -1,0 +1,38 @@
+@import '~vuetify/src/styles/styles.sass';
+
+* {
+  font-display: swap;
+}
+
+.no-active::before {
+  display: none;
+}
+
+html {
+  overflow-y: auto !important;
+}
+
+.snackbar > div {
+  min-width: 300px;
+}
+
+.toolbar > .v-toolbar__content {
+  padding: 0px !important;
+}
+
+div.v-snack:not(.v-snack--absolute) {
+  height: 100%;
+}
+
+.v-bottom-sheet.v-dialog {
+  border-radius: #{map-get($rounded, 'xl')} !important;
+}
+
+.fix-tabs .v-slide-group__prev {
+  display: none !important;
+}
+
+textarea {
+  line-height: normal !important;
+  margin-bottom: 8px;
+}
